@@ -158,8 +158,7 @@ class OpenLibraryServer {
         console.error("Open Library MCP server running on stdio");
     }
 }
-if (process.argv[1] === new URL(import.meta.url).pathname) {
-    const server = new OpenLibraryServer();
-    server.run().catch(console.error);
-}
+// Always run the server when executed directly
+const server = new OpenLibraryServer();
+server.run().catch(console.error);
 export { OpenLibraryServer };
