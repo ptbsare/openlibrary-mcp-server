@@ -1,2 +1,2 @@
 node_modules/
-build/
+# build/ - Keep in repo for npx git+https:// support
